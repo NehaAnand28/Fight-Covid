@@ -19,7 +19,6 @@
   <link rel="stylesheet" href="./css/navbar.css" />
   <link rel="stylesheet" href="./css/about.css" />
   <link rel="stylesheet" href="./css/intro.css" />
-  <link rel="stylesheet" href="./css/faq.css" />
   <link rel="stylesheet" href="./css/footer.css" />
   <link rel="stylesheet" href="./css/chat.css" />
   <link rel="stylesheet" href="./css/covidinfo.css" />
@@ -49,29 +48,39 @@
           <li class="nav-item ">
             <a class="nav-link active" href="#aboutus">About</a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link active" href="./emergency.html">Emergency</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link active" href="./request.html" target="_self">Request Covid help</a>
-          </li>
           <li class="nav-item">
             <a class="nav-link active" href="#covidinfo">Covid Info</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active" href="request.html" ">Request Covid help</a>
+          </li>
+          <li class=" nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Donate
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Oxygen</a></li>
+                <li><a class="dropdown-item" href="#">Ventilator</a></li>
+                <li><a class="dropdown-item" href="#">Blood</a></li>
+                <li><a class="dropdown-item" href="#">Plasma</a></li>
+                <li><a class="dropdown-item" href="#">Fund</a></li>
+              </ul>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active" href="covidtracker.html">Covid Tracker</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              Donate
+              Login
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Oxygen</a></li>
-              <li><a class="dropdown-item" href="#">Ventilator</a></li>
-              <li><a class="dropdown-item" href="#">Blood</a></li>
-              <li><a class="dropdown-item" href="#">Plasma</a></li>
-              <li><a class="dropdown-item" href="#">Fund</a></li>
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li><a class="dropdown-item" href="doctor.html">Register as Doctor</a></li>
+              <li><a class="dropdown-item" href="ngo.html">Register as NGO</a></li>
             </ul>
           </li>
-
         </ul>
       </div>
     </div>
@@ -80,25 +89,12 @@
         Navbar ends here
         ==================-->
 
-  <!--==================
-        Intro starts here
-        ==================-->
+  <!--================== Intro starts here ==================-->
   <!-- <button id="myBtn" ><img src=" ./images/nurse.svg"></button> -->
   <div class="container-fluid intro-wrapper d-flex flex-column justify-content-between" id="intro">
     <div class="row d-flex flex-row-reverse">
-      <div class="col-md-6 covid">
-        <div class="Covid-Warrior">
-          <div class="covid-front">
-            <h1>FIGHT<span class="battle"><img style="height:9rem ;" src="./images/virus-battle.svg" alt=""></span></h1>
-            <h1>COVID</h1>
-          </div>
-        </div>
-
-      </div>
-
       <div class="col-md-6 intro-content">
 
-        <!-- <h1>ISA-VIT</h1> -->
         <h3>About Fight Covid</h3>
         <p class="message">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar, turpis vel fermentum porttitor, velit
@@ -110,30 +106,33 @@
           lobortis turpis, ut auctor nulla. Etiam facilisis turpis quis odio facilisis, ut placerat risus sollicitudin.
           Sed semper lacus augue, eget faucibus libero pharetra ut. Proin accumsan congue lacus vitae porta. Proin augue
           dolor, scelerisque a quam vulputate, sagittis efficitur leo. Donec hendrerit ac turpis sed dapibus.!
-
         </p>
 
       </div>
+      <div class="col-md-6 covid">
+        <div class="Covid-Warrior">
+          <div class="covid-front">
+            <h1>FIGHT<span class="battle"><img style="height:9rem ;" src="./images/virus-battle.svg" alt=""></span></h1>
+            <h1>COVID</h1>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="d-flex flex-column justify-content-center scroll-container">
-      <!-- <a class="d-flex justify-content-center scrollbottom " href="#aboutus"><img class=""
-          src="./assets/images/Scrollbottom.svg"></a> -->
-      <div class="row"><button class="d-flex justify-content-start" target="_blank" id="hackerearth_button"><img
-            src="./images/doctor-3959.svg" />Register as Doctor</button>
-        <button style="left: 10px;" class="d-flex justify-content-start" target="_blank" id="hackerearth_button"><img
-            src="./images/building.svg" />Register as NGO</button>
+      <div class="row">
+        <button class="d-flex justify-content-start" id="hackerearth_button"><img
+            src="./images/doctor-3959.svg" /><a href="doctor.html">Register as Doctor</a></button>
+        <button style="left: 10px;" class="d-flex justify-content-start" id="hackerearth_button"><img
+            src="./images/building.svg" /><a href="ngo.html">Register as NGO</a></button>
       </div>
 
-      <button style="top: 50px;left: 90px; " class="d-flex" target="_blank" id="hackerearth_button"><img
-          src="./images/person-295.svg" /> Login
-        </a>
-      </button>
+      <button style="top: 50px;left: 90px; " class="d-flex" id="hackerearth_button">
+        <img src="./images/person-295.svg" /><a href="login.html">Login</a></button>
 
     </div>
+
   </div>
-  <!--==================
-        Intro ends here
-        ==================-->
+  <!--================== Intro ends here==================-->
 
   <!--==================Covid-info starts here==================-->
   <div class="container-fluid cinfo-wrapper wrapper" data-aos="fade-down">
@@ -148,31 +147,31 @@
         </div>
         <div class="cinfo-content">
           <div class="row d-flex justify-content-center cinfo-desc">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar, turpis vel fermentum porttitor,
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar, turpis vel fermentum porttitor,
               velit
-              odio iaculis est, a scelerisque sem magna sed turpis</p>
+              odio iaculis est, a scelerisque sem magna sed turpis</h4>
           </div>
           <div class="row">
             <div class="col-md-7   ">
-              <img src="./images/2nd.svg">
-              <p>Graph</p>
+              <img src="./images/increase.svg">
+              <p>GRAPH</p>
             </div>
             <div class="col-md-5">
-              <div class="d-flex flex-column">
-                <div>
-                  <img style="height:300px; width:500px;" src="./images/2nd.svg">
-                  <p>New Cases Today</p>
+              <div class="d-flex flex-column  align-content-stretch flex-wrap">
+                <div class="cdiv-style">
+                  <span class="cnum-style">95337754</span>
+                  <p>NEW CASES TODAY</p>
                 </div>
-                <div>
-                  <img style="height:300px; width:500px;" src="./images/2nd.svg">
-                  <p>Deaths Today</p>
+                <div class="cdiv-style">
+                  <span class="cnum-style">95337754</span>
+                  <p>DEATHS TODAY</p>
                 </div>
 
               </div>
 
             </div>
           </div>
-       
+
         </div>
       </div>
     </div>
@@ -181,344 +180,7 @@
 
 
 
-
-  <!--==================
-        FAQ starts here
-        ==================-->
-  <!-- <div class="container-fluid faq-wrapper wrapper" data-aos="fade-down">
-    <div class="row">
-      <div class="col">
-        <div class="d-flex justify-content-center" style="width: 100% !important">
-          <div class="banner-behind" id="faq">
-            <div class="banner-front">
-              <h1>COVID-19 FAQs </h1>
-            </div>
-          </div>
-        </div>
-        <div class="faq-content">
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="collapsed acc-button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  1. What is COVID-19?
-                  <div class="plus-minus">
-                    <div class="horizontal-line"></div>
-                    <div class="vertical-line"></div>
-                  </div>
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  COVID-19 is the disease caused by a new coronavirus called SARS-CoV-2. WHO first learned of this new
-                  virus on 31 December 2019, following a report of a cluster of cases of ‘viral pneumonia’ in Wuhan,
-                  People’s Republic of China.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button class="collapsed acc-button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  2. What are the symptoms of COVID-19
-                  <div class="plus-minus">
-                    <div class="horizontal-line"></div>
-                    <div class="vertical-line"></div>
-                  </div>
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  The most common symptoms of COVID-19 are
-                  <ul>
-                    <li>Fever</li>
-                    <li>Fatigue</li>
-                    <li>Dry cough</li>
-                  </ul>
-                  Other symptoms that are less common and may affect some patients include:
-                  <ul>
-                    <li>Loss of taste or smell,</li>
-                    <li>Nasal congestion,</li>
-                    <li>Conjunctivitis (also known as red eyes,)</li>
-                    <li>Sore throat,</li>
-                    <li>Headache,</li>
-                    <li>Muscle or joint pain,</li>
-                    <li>Different types of skin rash,</li>
-                    <li>Nausea or vomiting,</li>
-                    <li>Diarrhea,</li>
-                    <li> Chills or dizziness.</li>
-                  </ul>
-                  Symptoms of severe COVID‐19 disease include:
-                  <ul>
-                    <li> Shortness of breath,</li>
-                    <li>Loss of appetite,</li>
-                    <li>Confusion,</li>
-                    <li>Persistent pain or pressure in the chest,</li>
-                    <li>High temperature (above 38 °C).</li>
-                  </ul>
-                  Other less common symptoms are:
-                  <ul>
-                    <li>Irritability,</li>
-                    <li>Confusion,</li>
-                    <li>Reduced consciousness (sometimes associated with seizures),</li>
-                    <li> Anxiety,</li>
-                    <li>Depression,</li>
-                    <li>Sleep disorders,</li>
-                    <li>More severe and rare neurological complications such as strokes, brain inflammation, delirium
-                      and nerve damage.</li>
-                  </ul>
-                  People of all ages who experience fever and/or cough associated with difficulty breathing or shortness
-                  of breath, chest pain or pressure, or loss of speech or movement should seek medical care immediately.
-                  If possible, call your health care provider, hotline or health facility first, so you can be directed
-                  to the right clinic.
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingFive">
-                <button class="collapsed acc-button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                  3. What happens to people who get COVID-19?
-                  <div class="plus-minus">
-                    <div class="horizontal-line"></div>
-                    <div class="vertical-line"></div>
-                  </div>
-                </button>
-              </h2>
-              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  Among those who develop symptoms, most (about 80%) recover from the disease without needing hospital
-                  treatment. About 15% become seriously ill and require oxygen and 5% become critically ill and need
-                  intensive care.
-                  <br />
-                  Complications leading to death may include respiratory failure, acute respiratory distress syndrome
-                  (ARDS), sepsis and septic shock, thromboembolism, and/or multiorgan failure, including injury of the
-                  heart, liver or kidneys.
-                  <br />
-                  In rare situations, children can develop a severe inflammatory syndrome a few weeks after infection.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingNine">
-                <button class="collapsed acc-button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-                  4.Who is most at risk of severe illness from COVID-19?
-                  <div class="plus-minus">
-                    <div class="horizontal-line"></div>
-                    <div class="vertical-line"></div>
-                  </div>
-                </button>
-              </h2>
-              <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  People aged 60 years and over, and those with underlying medical problems like high blood pressure,
-                  heart and lung problems, diabetes, obesity or cancer, are at higher risk of developing serious
-                  illness.
-                  <br>
-                  However, anyone can get sick with COVID-19 and become seriously ill or die at any age.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTen">
-                <button class="collapsed acc-button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-                  5. Are there long term effects of COVID-19?
-                  <div class="plus-minus">
-                    <div class="horizontal-line"></div>
-                    <div class="vertical-line"></div>
-                  </div>
-                </button>
-              </h2>
-              <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  Some people who have had COVID-19, whether they have needed hospitalization or not, continue to
-                  experience symptoms, including fatigue, respiratory and neurological symptoms.
-                  <br>
-                  WHO is working with our Global Technical Network for Clinical Management of COVID-19, researchers and
-                  patient groups around the world to design and carry out studies of patients beyond the initial acute
-                  course of illness to understand the proportion of patients who have long term effects, how long they
-                  persist, and why they occur. These studies will be used to develop further guidance for patient care.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingEleven">
-                <button class="collapsed" type="button acc-button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
-                  6.How can we protect others and ourselves if we don't know who is infected?
-                  <div class="plus-minus">
-                    <div class="horizontal-line"></div>
-                    <div class="vertical-line"></div>
-                  </div>
-                </button>
-              </h2>
-              <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  Stay safe by taking some simple precautions, such as physical distancing, wearing a mask, especially
-                  when distancing cannot be maintained, keeping rooms well ventilated, avoiding crowds and close
-                  contact, regularly cleaning your hands, and coughing into a bent elbow or tissue. Check local advice
-                  where you live and work. Do it all!
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwelve">
-                <button class="collapsed" type="button acc-button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
-                  7. When should I get a test for COVID-19?
-                  <div class="horizontal-line"></div>
-                  <div class="vertical-line"></div>
-            </div>
-            </button>
-            </h2>
-            <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve"
-              data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                Anyone with symptoms should be tested, wherever possible. People who do not have symptoms but have had
-                close contact with someone who is, or may be, infected may also consider testing – contact your local
-                health guidelines and follow their guidance.
-                <br>
-                While a person is waiting for test results, they should remain isolated from others. Where testing
-                capacity is limited, tests should first be done for those at higher risk of infection, such as health
-                workers, and those at higher risk of severe illness such as older people, especially those living in
-                seniors’ residences or long-term care facilities.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThirteen">
-              <button class="collapsed acc-button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThirteen" aria-expanded="false" aria-controls="flush-collapseThirteen">
-                8. What test should I get to see if I have COVID-19 ?
-                <div class="plus-minus">
-                  <div class="horizontal-line"></div>
-                  <div class="vertical-line"></div>
-                </div>
-              </button>
-            </h2>
-            <div id="flush-collapseThirteen" class="accordion-collapse collapse" aria-labelledby="flush-headingThirteen"
-              data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                In most situations, a molecular test is used to detect SARS-CoV-2 and confirm infection. Polymerase
-                chain reaction (PCR) is the most commonly used molecular test. Samples are collected from the nose
-                and/or throat with a swab. Molecular tests detect virus in the sample by amplifying viral genetic
-                material to detectable levels. For this reason, a molecular test is used to confirm an active infection,
-                usually within a few days of exposure and around the time that symptoms may begin.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingFourteen">
-              <button class="collapsed acc-button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen">
-                9. What should I do if I am exposed to someone who has COVID-19?
-                <div class="plus-minus">
-                  <div class="horizontal-line"></div>
-                  <div class="vertical-line"></div>
-                </div>
-              </button>
-            </h2>
-            <div id="flush-collapseFourteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFourteen"
-              data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                If you have been exposed to someone with COVID-19, you may become infected, even if you feel well.
-
-                After exposure to someone who has COVID-19, do the following:
-                <ul>
-                  <li>Call your health care provider or COVID-19 hotline to find out where and when to get a test. </li>
-                  <li>Cooperate with contact-tracing procedures to stop the spread of the virus. </li>
-                  <li>If testing is not available, stay home and away from others for 14 days. </li>
-                  <li>While you are in quarantine, do not go to work, to school or to public places. Ask someone to
-                    bring you supplies.</li>
-                  <li>Keep at least a 1-metre distance from others, even from your family members. </li>
-                  <li>Wear a medical mask to protect others, including if/when you need to seek medical care.</li>
-                  <li>Clean your hands frequently.</li>
-                  <li>Stay in a separate room from other family members, and if not possible, wear a medical mask.</li>
-                  <li>Keep the room well-ventilated.</li>
-                  <li>If you share a room, place beds at least 1 metre apart.</li>
-                  <li>Monitor yourself for any symptoms for 14 days.</li>
-                  <li>
-                    Stay positive by keeping in touch with loved ones by phone or online, and by exercising at home.
-                  </li>
-                </ul>
-                If you live in an area with malaria or dengue fever, seek medical help if you have a fever. While
-                travelling to and from the health facility and during medical care, wear a mask, keep at least a 1-metre
-                distance from other people and avoid touching surfaces with your hands. This applies to adults and
-                children
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingFifteen">
-              <button class="collapsed acc-button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseFifteen" aria-expanded="false" aria-controls="flush-collapseFifteen">
-                10.How long does it take to develop symptoms?
-                <div class="plus-minus">
-                  <div class="horizontal-line"></div>
-                  <div class="vertical-line"></div>
-                </div>
-              </button>
-            </h2>
-            <div id="flush-collapseFifteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFifteen"
-              data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                The time from exposure to COVID-19 to the moment when symptoms begin is, on average, 5-6 days and can
-                range from 1-14 days. This is why people who have been exposed to the virus are advised to remain at
-                home and stay away from others, for 14 days, in order to prevent the spread of the virus, especially
-                where testing is not easily available.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingSixteen">
-              <button class="collapsed acc-button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseSixteen" aria-expanded="false" aria-controls="flush-collapseSixteen">
-                11. What should I do if I have COVID-19 symptoms ?
-                <div class="plus-minus">
-                  <div class="horizontal-line"></div>
-                  <div class="vertical-line"></div>
-                </div>
-              </button>
-            </h2>
-            <div id="flush-collapseSixteen" class="accordion-collapse collapse" aria-labelledby="flush-headingSixteen
-              data-bs-parent=" #accordionFlushExample">
-              <div class="accordion-body">
-                If you have any symptoms suggestive of COVID-19, call your health care provider or COVID-19 hotline for
-                instructions and find out when and where to get a test, stay at home for 14 days away from others and
-                monitor your health.
-                <br>
-                If you have shortness of breath or pain or pressure in the chest, seek medical attention at a health
-                facility immediately. Call your health care provider or hotline in advance for direction to the right
-                health facility.
-                <br>
-                If you live in an area with malaria or dengue fever, seek medical care if you have a fever.
-                <br>
-                If local guidance recommends visiting a medical centre for testing, assessment or isolation, wear a
-                medical mask while travelling to and from the facility and during medical care. Also keep at least a
-                1-metre distance from other people and avoid touching surfaces with your hands. This applies to adults
-                and children.
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  </div> -->
- <!--==================FAQ ends here==================-->
-
- <!--==================chat bot starts here==================-->
+  <!--==================chat bot starts here==================-->
   <button class="open-button" onclick="openForm()">
     <img style=" height:55px;width:55px;" src="./images/nurse.svg">
   </button>
@@ -559,48 +221,6 @@
   <!--==================chat bot ends here==================-->
 
 
-  <!--==================
-        Contact Us starts here
-        ==================-->
-
-  <!-- <div class="container-fluid wrapper contactus-wrapper" data-aos="fade-down">
-    <div class="col ">
-      <div class="d-flex justify-content-center">
-        <div class=" banner-behind" id="contactus">
-          <div class="banner-front">
-            <h1>Contact Us</h1>
-          </div>
-        </div>
-      </div>
-      <div class="contactus-content">
-        <div class="contactus-form-box">
-          <div class="side">
-            <div class="contactus-left">
-              <h3 class="contactus-title">
-                Feel free to contact us any time. We will get back to you as
-                soon as we can!
-              </h3>
-              <form class="contactus-form">
-                <input id="name-input" type="text" placeholder="Name" />
-                <input id="Email-input" type="text" placeholder="Email" />
-                <input id="Message-input" type="text" placeholder="Message" />
-                <p id="nameerror" class="disappear" style="color:red">Enter a valid Name.</p>
-                <p id="emailerror" class="disappear" style="color:red">Enter a valid Email.</p>
-                <button id="contactus-button" type="submit" onclick="contactUsHandler()">SEND</button>
-              </form>
-            </div>
-          </div>
-          <div class="">
-            <div class="info-svg">
-              <img src="assets/images/Group 88.svg" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <!--==================Contact Us ends here ==================-->
-
 
   <!--==================Footer starts here==================-->
   <footer>
@@ -630,8 +250,7 @@
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <script src="./assets/js/devfolio.js"></script>
+  <script src="./js/modal.js"></script>
 
   <script>
 
@@ -734,109 +353,6 @@
 
 
 
-    // var mybutton = document.getElementById("myBtn");
-    // window.onscroll = function () { scrollFunction() };
-
-    // function scrollFunction() {
-    //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 100) {
-    //     mybutton.style.display = "block";
-    //   } else {
-    //     mybutton.style.display = "none";
-    //   }
-    // }
-
-    // function topFunction() {
-    //   document.body.scrollTop = 0;
-    //   document.documentElement.scrollTop = 0;
-    // }
-
-    // $("#track-footer-image-1").click(function () {
-    //   $("#track-card-content-1").toggleClass("disappear");
-    //   $("#track-card-heading-1").toggleClass("disappear");
-    //   $("#track-desc-1").toggleClass("disappear");
-    //   $("#track-footer-1").toggleClass("expand");
-    //   $("#track-footer-image-1").toggleClass("invert");
-    // });
-    // $("#track-footer-image-2").click(function () {
-    //   $("#track-card-content-2").toggleClass("disappear");
-    //   $("#track-card-heading-2").toggleClass("disappear");
-    //   $("#track-desc-2").toggleClass("disappear");
-    //   $("#track-footer-2").toggleClass("expand");
-    //   $("#track-footer-image-2").toggleClass("invert");
-    // });
-    // $("#track-footer-image-3").click(function () {
-    //   $("#track-card-content-3").toggleClass("disappear");
-    //   $("#track-card-heading-3").toggleClass("disappear");
-    //   $("#track-desc-3").toggleClass("disappear");
-    //   $("#track-footer-3").toggleClass("expand");
-    //   $("#track-footer-image-3").toggleClass("invert");
-    // });
-    // $("#track-footer-image-4").click(function () {
-    //   $("#track-card-content-4").toggleClass("disappear");
-    //   $("#track-card-heading-4").toggleClass("disappear");
-    //   $("#track-desc-4").toggleClass("disappear");
-    //   $("#track-footer-4").toggleClass("expand");
-    //   $("#track-footer-image-4").toggleClass("invert");
-    // });
-    // $("#track-footer-image-5").click(function () {
-    //   $("#track-card-content-5").toggleClass("disappear");
-    //   $("#track-card-heading-5").toggleClass("disappear");
-    //   $("#track-desc-5").toggleClass("disappear");
-    //   $("#track-footer-5").toggleClass("expand");
-    //   $("#track-footer-image-5").toggleClass("invert");
-    // });
-    // $("#track-footer-image-6").click(function () {
-
-
-    //   $("#track-card-content-6").toggleClass("disappear");
-    //   $("#track-card-heading-6").toggleClass("disappear");
-    //   $("#track-desc-6").toggleClass("disappear");
-    //   $("#track-footer-6").toggleClass("expand");
-    //   $("#track-footer-image-6").toggleClass("invert");
-    // });
-
-
-
-
-
-
-    // function validateemail() {
-    //   var email = $("#Email-input").val();
-    //   var emailRegex = /\S+@\S+\.\S+/;
-    //   var er = emailRegex.test(email);
-    //   return (er);
-
-    // };
-    // function validatename() {
-    //   var name = $("#name-input").val();
-    //   var nameRegex = /^[A-Za-z ]+$/;
-    //   var nr = nameRegex.test(name);
-    //   return (nr);
-
-    // };
-
-    // function contactUsHandler() {
-    //   event.preventDefault();
-    //   var msg = "Query related to SPARK/covid";
-    //   var message = $("#Message-input").val();
-    //   if (validateemail() && validatename()) {
-    //     $("#nameerror").addClass("disappear");
-    //     $("#emailerror").addClass("disappear");
-    //     $("#name-input").css("border-bottom", "1px solid white");
-    //     $("#Email-input").css("border-bottom", "1px solid white");
-    //     window.open("mailto:isavittech@gmail.com?subject=" + msg + "&body=" + message, "_blank");
-    //   }
-    //   else {
-    //     if (!validatename()) {
-    //       $("#nameerror").removeClass("disappear");
-    //       $("#name-input").css("border-bottom", "1px solid red");
-    //     }
-    //     if (!validateemail()) {
-    //       $("#emailerror").removeClass("disappear");
-    //       $("#Email-input").css("border-bottom", "1px solid red");
-    //     }
-    //   }
-    // }
 
   </script>
 </body>

@@ -1,4 +1,15 @@
 
+a{
+  text-decoration: none !important;
+  color:#2E3455;
+  all: unset;
+  
+}
+a:hover {
+  color:#2E3455;
+  text-decoration:none; 
+  cursor:pointer;  
+}
 .message {
   color: #55bef6;
   font-size:1rem;
@@ -13,7 +24,8 @@
   font-size: 10rem;
   font-weight: 700;
   color: #800080;
-  z-index: 10;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  z-index: 9;
   position: relative;
   top: 17px;
   right: 10px;
@@ -160,6 +172,7 @@
     padding-right:7vw;
   }
   .covid-behind{
+    display: none;
   }
   .covid-behind span{
     font-size: 6rem;
@@ -221,6 +234,17 @@
     top:-10px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 600px) and (max-width: 768px) {
   .intro-content{

@@ -1,4 +1,18 @@
 /*cinfo-->prizes & info-->prize*/
+p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+.cdiv-style{
+   padding: 50px;
+}
+.cnum-style{
+ font-size: 4rem;
+ color:burlywood;
+}
+
 
 .cinfo-wrapper{
     margin-bottom:100px;
