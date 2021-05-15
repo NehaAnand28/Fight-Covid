@@ -1,0 +1,126 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index:99;
+    
+}
+.navbar-body{
+    margin-top:7px;
+}
+.navbar-brand img{
+    width:55px;
+    height: 55px;
+}
+.navbar .container-fluid{
+    padding-right: 5vw;
+}
+.nav-item{
+    margin-left: 2vw;
+    padding-bottom: 7px;
+    border-bottom:5px solid transparent;
+    transition: border-bottom 0.2s ease;
+}
+/* .nav-item:hover{
+    border-bottom:5px solid 55bef6;
+    border-radius: 5px;
+} */
+.navbar.scrolled {
+    background-color: #2c1d6c!important;
+    transition: background-color 200ms linear;
+}
+/* .navbar-toggler{
+    border-radius:20px;
+    background-color:#800080;
+} */
+.navbar-toggler:active,.navbar-toggler:focus{
+    box-shadow: none;
+} 
+.toggler-line{
+    height:5px;
+    width:30px;
+    margin: 4px 7px;
+    background-color: white;
+    border-radius: 2px;
+}
+.nav-link{
+    font-size:20px;
+    padding:0px 10px !important;
+    border:2px solid transparent;
+    transition: border-radius 0ms !important;
+    transition: border 0.2s ease;
+}
+
+.nav-link:hover{
+    border:2px solid #800080;
+    border-radius:20px;  
+}
+
+
+@media (max-width: 600px) {
+    .navbar .container-fluid{
+        padding-right: 0vw;
+    }
+    .navbar-body{
+        background: url(7650b257d59c072f34d09c4cd0e22e22.jpg), linear-gradient(91.03deg, rgba(255, 255, 255, 0.2) 0.3%, rgba(255, 255, 255, 0.108) 99.58%);
+        backdrop-filter: blur(33.8542px);
+        border-radius: 8px;
+        margin-right: 10px;
+        padding-bottom: 30px;
+        padding-top: 50px;
+        position: relative;
+        top:-60px;
+    }
+    .navbar.scrolled {
+        background-color: transparent  !important;
+    } 
+    .nav-item{
+        display: flex;
+        justify-content: center;
+        margin:0px;
+        border:none;
+    }
+    .nav-link{
+        font-weight: 700;
+        border-bottom:2px solid transparent;
+        text-decoration: none;
+    }
+
+    .navbar-toggler{
+        z-index: 100;
+    }
+    .collapsing {
+        -webkit-transition: none;
+        transition:none;
+        display: none;
+    }
+    .nav-link:active,.nav-link:hover{
+        border:none;
+        border-radius:0;   
+        border-bottom:2px solid transparent;
+        
+    }
+    .nav-item:hover{
+        border:none;
+        border-radius: 0px;
+    }
+    
+} 
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 600px) and (max-width: 768px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1300px) {
+}
+
+@media (min-width: 1300px) and (max-width: 1367px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1367px) {
+}

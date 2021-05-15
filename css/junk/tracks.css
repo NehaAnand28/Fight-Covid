@@ -1,0 +1,162 @@
+.tracks-wrapper{
+    margin-bottom: 100px;
+}
+.tracks-content{
+    margin-top:50px;
+}
+.track-card-wrap{   
+    padding:20px 3vw;
+    padding-bottom: 0px;
+}
+.track-card{
+    background-color:#CCE5FB;
+    height:400px;
+    border-radius: 10%;
+    overflow:hidden;
+    /* -webkit-mask-image: -webkit-radial-gradient(white, black); */
+}
+.track-card-content{
+    padding: 20px 0px;
+    
+}
+.track-card-content img{
+    height:12vw;
+    width:12vw;
+    margin-bottom:10px;
+}
+.track-card-heading h3{
+    color:black;
+    font-weight: 700;
+    position: relative;
+    text-align:center;
+    top:-20px;
+}
+.track-card-footer{
+    border-radius: 10%;
+}
+.track-footer{
+    background-color:#2B4459;
+    width:100%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding:0;
+    position: relative;
+    font-size: 50px;
+    color:#CCE5FB;
+    font-weight:100;
+    z-index:10;
+}
+.track-footer img{
+    margin:15px 0;
+    height:36px;
+    width:46px;
+    -webkit-transition-duration: 0.4s;
+}
+
+.disappear{
+    display: none !important;
+}
+.expand{
+    height:100% !important;
+}
+.invert{
+    transform: rotate(180deg);
+}
+.track-desc{
+    font-size:1.3rem;
+    padding: 10px 10px;
+    text-align: center;
+}
+@media(max-width: 600px) {
+    .track-footer{
+        border-top-left-radius:10%;
+        border-top-right-radius: 10%;
+    }
+    .track-footer img{
+        margin:10px 0;
+        height:18px;
+        width:26px;
+        -webkit-transition-duration: 0.2s;
+    }
+    .track-card{
+        height:250px; 
+    }
+    .track-card-content img{
+        height:100px;
+        width:100px;
+    }
+    .track-card-heading{
+        padding: 0px 10px;
+    }
+    .track-card-heading h3{
+        position: relative;
+        font-size: 1rem;
+        top:-20px;
+    }
+    .track-desc{
+        font-size:0.65rem;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 600px) and (max-width: 768px) {
+    .track-card{
+        height:400px; 
+    }
+    .track-desc{
+        font-size:1rem;
+    }
+    .track-card-content img{
+        height:150px;
+        width:150px;
+    }
+    .track-card-heading h3{
+        position: relative;
+        top:-10px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .track-card{
+        height:350px; 
+    }
+    .track-desc{
+        font-size:1.0rem;
+    }
+    .track-card-content img{
+        height:120px;
+        width:120px;
+    }
+    .track-card-heading h3{
+        position: relative;
+        top:-10px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1300px) {
+    .track-desc{
+        font-size:1.2rem;
+    }
+    .track-card-content img{
+        height:150px;
+        width:150px;
+    }
+    .track-card-heading h3{
+        position: relative;
+        top:-25px;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1367px) {
+    .track-card-heading h3{
+        position: relative;
+        top:-15px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1367px) {
+}

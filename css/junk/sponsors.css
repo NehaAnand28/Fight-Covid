@@ -1,0 +1,111 @@
+.sponsors-content{
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+.sponsor-row{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.other-sponsor-img-2{
+  width: 200px;
+  height: 100px;
+  background-color:white;
+  padding:10px;
+  border-radius:10px;
+}
+.other-sponsor-img-1{
+  width: 200px;
+  height: 180px;
+  background-color:white;
+  padding:10px;
+  border-radius:10px;
+}
+.other-sponsor-img-axure{
+  width: 200px;
+  height: 80px;
+  background-color:white;
+  padding:10px;
+  border-radius:10px;
+}
+.other-sponsor-img-echoar{
+  width: 200px;
+  height: 70px;
+  background-color:white;
+  padding:10px;
+  border-radius:10px;
+}
+.gray-bg{
+  background-color:gray !important;
+}
+.main-sponsor-row img{
+  margin-top: 5px;
+  margin-bottom:30px;
+  width: 300px;
+  height: 200px;
+  background-color:white;
+}
+.sponsor-row img{
+  margin-top:20px;
+}
+.other-sponsors-heading{
+  margin-top:40px;
+}
+#openai_logo{
+  width: 300px;
+  height:200px;
+}
+#hackerearth_logo{
+  width: 300px;
+  height:200px;
+  padding:0px 50px;
+}
+@media (max-width: 600px) {
+  .sponsors-content
+  {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .other-sponsor-img-1{
+    width: 140px;
+    height: 130px;
+    background-color:white;
+  }
+  .other-sponsor-img-2{
+    width: 140px;
+    height: 80px;
+    background-color:white;
+  }
+  .other-sponsor-img-axure{
+    width: 140px;
+    height: 70px;
+    background-color:white;
+    padding:10px;
+    border-radius:10px;
+  }
+  .other-sponsor-img-echoar{
+    width: 140px;
+    height: 50px;
+    background-color:white;
+    padding:10px;
+    border-radius:10px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 600px) and (max-width: 768px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1300px) {
+}
+
+@media (min-width: 1300px) and (max-width: 1367px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1367px) {
+}

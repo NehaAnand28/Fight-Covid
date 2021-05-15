@@ -1,0 +1,81 @@
+
+.faq-wrapper{
+  margin-top: 50px;
+}
+.faq-content{
+  padding-left: 15vw;
+  padding-right: 15vw;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.accordion-header{
+  
+  border-bottom: 3px solid white;
+}
+.accordion-header button{
+  width:100%;
+  background-color: transparent;
+  color:white;
+  text-align: left;
+  font-size: 1rem;
+  border:none;
+  padding-bottom:5px;
+}
+
+.accordion-header button:active,.accordion-header button:focus{
+  outline: none;
+}
+.plus-minus{
+  width:14px;
+  height:14px;
+  background-color:white;
+  border-radius: 50%;
+  margin:0;
+  display: inline-block;
+  float: right;
+}
+.horizontal-line{
+  height:2px;
+  width:10px;
+  background-color:black;
+  position: relative;
+  top:6px;
+  left:2px;
+}
+.vertical-line{
+  height:10px;
+  width:2px;
+  background-color:black;
+  position: relative;
+  top:0px;
+  left:6px;
+  
+}
+
+@media (max-width: 600px) {
+  .faq-content
+  {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 0px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 600px) and (max-width: 768px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1300px) {
+}
+
+@media (min-width: 1300px) and (max-width: 1367px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1367px) {
+}
